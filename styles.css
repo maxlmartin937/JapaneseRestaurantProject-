@@ -1,3 +1,6 @@
+html { 
+    background-color: black;
+}
 body {
     color: white;
     font-family: Helvetica-neue, Helvetica, Arial, sans-serif;
@@ -5,84 +8,61 @@ body {
     padding: 0;
 }
   /* HEADER */
-header {
-    background: 
-        /* top, transparent black, faked with gradient */ 
-        linear-gradient(
-            rgba(0, 0, 0, 0.6), 
-            rgba(0, 0, 0, 0.6)
-        ),
-    url(Images/hero.jpg);
-    background-position: center;
-    background-size: 100%;
-    height: 400px;
-    padding: 20px; 
-    text-align: center;
-  } 
-
-header .mobile { 
-    display: none; 
-    /* default mobile won't display */
-}
-
-header .logo a { 
-    background-image: url("Images/logo.png"); 
-    background-size: 280px;
-    background-repeat: no-repeat;
-    display: inline-block; 
-    height: 380px;
-    width: 300px; 
-    position: relative; 
-    text-align: center;
-    top: -55px;
-    text-indent: -999999999px;
-    
-}  
-
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-} 
-.dropdown{ 
-    text-align: left;
-}   
-  nav li { 
-      color: white;
-      font-size: larger; 
-      font-weight: 400;
-      display: inline-flex; 
-      justify-content: center;
-      margin-right: 20px; 
-      border-radius: 2px; 
-      padding: 2px; 
-} 
-  section {
-    background: white;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}  
-
-/* RESPONSIIVE RULES */
-@media screen and (max-width: 859px) {  
-    header { 
-        height: 200px; 
-        background-position: 0 30px;
-    }
-    header .mobile {
-        display: inline-block;
-        /* inline-block fixes mobile resolution and nav bar stacking */
+  header {
+      background: 
+          /* top, transparent black, faked with gradient */ 
+          linear-gradient(
+              rgba(0, 0, 0, 0.6), 
+              rgba(0, 0, 0, 0.6)
+          ),
+      url(Images/hero.jpg);
+      background-position: center;
+      background-size: 100%;
+      height: 400px;
+      padding: 20px; 
+      text-align: center;
     } 
-    
-    header .desktop {
-        display: none;
-        /* overwrites ".mobile" rules when abox 859px */
-    }
-}
-
-
+    header .logo a { 
+        background-image: url("Images/logo.png"); 
+        background-size: 280px;
+        background-repeat: no-repeat;
+        display: inline-block; 
+        height: 340px;
+        width: 280px;
+        top: 0rem;
+        position: relative; 
+        text-align: center;
+        text-indent: -999999999px;
+    }     
+     .navbar { 
+        background-color: gray;
+        box-shadow: 0px 2px 5px #777; 
+        height: rem;
+     } 
+     .navbar-brand { 
+        text-transform:uppercase; 
+     }
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    } 
+      nav li { 
+          color: rgb(0, 0, 0);
+          font-size: larger; 
+          font-weight: 400;
+          display: inline-flex; 
+          justify-content: center;
+          margin-right: 20px; 
+          border-radius: 2px; 
+          padding: 2px; 
+    } 
+      section {
+        background: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+    }  
 /* FEATURES */
     .features { 
         color: rgb(66, 65, 65);
@@ -91,7 +71,6 @@ nav ul {
         flex-direction: row; 
         flex-wrap: wrap;
     }
-    
     .features figure {
         margin: auto;
         text-align: center; 
@@ -109,6 +88,7 @@ nav ul {
     .features figure img:hover { 
         transform: scale(1.1);
     }
+    
     .feature-box {
         display: flex;
        font-size: medium; 
@@ -124,15 +104,37 @@ nav ul {
         font-size: large; 
         font-weight: 500;
 }
-    .feature-box.sales div {  
-        font-family: Arial, Helvetica, sans-serif;
-} 
-    .feature-box.closeouts div {  
-        background: rgb(238, 87, 87);
-        opacity: .8; 
-        font-style: italic;
-}  
-
+    /* RESPONSIIVE RULES */
+@media screen and (max-width: 859px) {  
+    header { 
+        height: 200px; 
+        background-position: 0 30px;
+    } 
+    header .logo a { 
+        background-image: url("Images/logo.png"); 
+        background-size: 280px;
+        background-repeat: no-repeat;
+        display: inline-block; 
+        height: 220px;
+        width: 220px;
+        top: 0rem;
+        position: relative; 
+        text-align: center;
+        text-indent: -999999999px;
+    }  
+    header .mobile {
+        display: inline-block;
+        /* inline-block fixes mobile resolution and nav bar stacking */
+    } 
+    
+    header .desktop {
+        display: none;
+        /* overwrites ".mobile" rules when abox 859px */
+    } 
+    .navbar { 
+        height: 2.5rem;
+    }
+}
     /* RESPONSIVE RULES .IMG */
     @media screen and (max-width: 500px) { 
         header { 
@@ -150,7 +152,12 @@ nav ul {
         .features { 
             display: block;
         } 
-        } 
+        }  
+    @media screen and (max-width: 767px) { 
+        .navbar { 
+            height: 3.2rem; 
+        }
+    }
     @media screen and (max-width: 859px) { 
         header .logo a {
             background-image: url("Images/logo.png"); 
@@ -163,10 +170,6 @@ nav ul {
             background-position: 0 0px;
         } 
     }
-            
-
-        
-
     /* a responsiveness and format */
     li:first-child { 
         margin-left: 5px;
@@ -178,12 +181,10 @@ nav ul {
     a:hover { 
         text-decoration: underline;
     }
-    
     /* FOOTER */
-    
-footer {
-    background: black;
-    padding: 10px 20px; 
-    font-size: 12px;
-}
-
+    footer {
+        background: black;
+        padding: 10px 20px; 
+        font-size: 12px; 
+        bottom: 0;
+    }
