@@ -1,96 +1,67 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-      <!-- Meta info -->
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-      <!-- Google Fonts --> 
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-      <!-- Bootstrap CSS CDN --> 
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> 
-      <!-- Style Sheet -->
-      <link rel="stylesheet" type="text/css" href="styles.css"> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Google Fonts --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
 
-        
-      <title>Kumi Sushi</title>
-    </head>
-    <body>
-      <header>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-md bg-body-secondary rounded-4">
-<div class="container-fluid">
-  <a class="navbar-brand" href="index.html">Kumi Sushi</a>
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button> 
-  <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-    <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
-        </li>
-              <!-- dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Navigation
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="directions.html">Directions</a></li>
-              <li><a class="dropdown-item" href="about.html">About Us</a></li>
-              <li><a class="dropdown-item" href="contact.html">Contact</a></li>
-            </ul>
-          </li>  
-              <!-- dropdown -->
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- Navbar -->  
-<!-- Logo ul --> 
-        <div>
-          <ul> 
-            <li class="logo"> <a href="index.html"><img src="images/logo.png"></a> 
-            </li>
-          </ul> 
+    <link rel="stylesheet" href="styles.css">
+    <title>Kumi Sushi</title>
+</head>
+<body> 
+    <header> 
+        <!-- Navbar -->
+        <nav>
+        <div class="topnav" id="myTopnav">
+            <a href="#home" class="active">Home</a>
+            <a href="#news">Menu</a>
+            <a href="#contact">Order Online</a>
+            <div class="dropdown">
+            <button class="dropbtn">More 
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="directions.html">Directions</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div> 
+        <div class="image-container">
+                <div id="logo"> 
+                    <img src="images/logo.png">
+                </div>
         </div>
-      </header> 
-      <section class="features"> 
-        <figure>
-          <img src="Images/cake.jpg" alt="Delicious Fresh Cake"> 
-          <figcaption>Delicious Fresh Cake</figcaption> 
-        </figure>
-        <figure>
-          <img src="Images/seafood ramen.jpg" alt="Seafood Ramen with Wild Caught Shrimp"> 
-          <figcaption>Seafood Ramen with Wild Caught Shrimp</figcaption> 
-        </figure>
-        <figure>
-          <img src="Images/sushi.jpg" alt="Artisan Suhsi with imported Japanese fish"> 
-          <figcaption>Artisan Suhsi with imported Japanese fish</figcaption> 
-        </figure>
-      </section>
-       <footer>
-        321 N 7th Street Phoenix, AZ 85014
-       </footer>
-       <!-- Boot Strap JS Script --> 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-  </body> 
-  </html> 
-  
-      
-      
+    </nav>
+    <!-- Navbar -->
+</header>
 
-
-
-
-
-            
-
-        
-          
-
-      
+    <!-- Landing page section --> 
+<section class="features"> 
+<figure>
+    <img src="Images/cake.jpg" alt="Delicious Fresh Cake"> 
+    <figcaption>Delicious Fresh Cake</figcaption> 
+</figure>
+<figure>
+    <img src="Images/seafood ramen.jpg" alt="Seafood Ramen with Wild Caught Shrimp"> 
+    <figcaption>Seafood Ramen with Wild Caught Shrimp</figcaption> 
+</figure>
+<figure>
+    <img src="Images/sushi.jpg" alt="Artisan Suhsi with imported Japanese fish"> 
+    <figcaption>Artisan Suhsi with imported Japanese fish</figcaption> 
+</figure>
+</section>
+   <footer class="footer"> 
+    321 N 7th Street Phoenix, AZ 85014
+   </footer> 
+   <script src="styles.js"></script>
+</body>
+</html>
+         
+             
+    
