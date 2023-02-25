@@ -27,6 +27,7 @@
 		Copied usable elements from previous iteration, added styles for new class elements used by the new nav bar and dropdown 
 		Dried up unused code from prior version 
 	Notes: This iteration was basically built from the bottom up with some of the sections grabbed from the previous version. Ultimately I could not find the solution for the responsive nav bar and decided to build from scratch around this design element. This has definitely been a lesson in having a plan for the features I'll be including in future projects. Some planning ahead and forethought into it woulve certainly saved me a headache. Yesterday, the 22nd, I had spent the day looking into the issue without any success, so I made a plan to implement a new system today. All in all I'm pretty happy with the current result. 
+<<<<<<< HEAD
 
 2/24/23 
 	Added googlemaps extension to "directions" page 
@@ -38,6 +39,9 @@
 
 	Definitely a lot for today! Been suffering a cold for the last day and 	it's kicking my butt lol
 		
+=======
+	
+>>>>>>> 8decd5c71b8657ad202e258bd06e8b9321ae5da0
 
 
 
@@ -48,4 +52,9 @@ I unfortunately lost the local files for the original repo, so I decided to crea
 
 The original was originally made on 2/12/23 with two commits 
 
+<<<<<<< HEAD
 Definitely a learning experience about moving/copying/deleting my .git files...
+=======
+Definitely a learning experience about moving/copying/deleting my .git files...
+	
+>>>>>>> 8decd5c71b8657ad202e258bd06e8b9321ae5da0
